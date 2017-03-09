@@ -30,7 +30,7 @@ pod 'Alamofire-XMLParser'
 ```swift
 import Alamofire
 import SwiftyXMLParser
-import Alamofire-XMLParser
+import Alamofire_XMLParser
 
 Alamofire.request("http://laodong.com.vn/rss/home.rss").responseXML(completionHandler: {
             response in
