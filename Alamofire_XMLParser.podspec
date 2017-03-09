@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name        = "Alamofire-XMLParser"
+  s.name        = "Alamofire_XMLParser"
   s.version     = "1.0"
   s.summary     = "Alamofire extension for serialize NSData to SwiftyXMLParser"
   s.homepage    = "https://github.com/tin612/Alamofire_XMLParser"
