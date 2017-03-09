@@ -5,7 +5,7 @@
 Useful Extension to combine Alamofire and SwiftyXMLParser
 # Requirements
 * iOS 10.0+
-* Swift .0+
+* Swift 3.0+
 
 # Installation
 ## CocoaPods
