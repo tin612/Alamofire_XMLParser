@@ -1,6 +1,5 @@
 # Alamofire_XMLParser
 
-![Cocoapods compatible](https://cocoapod-badges.herokuapp.com/v/Alamofire-SwiftyXMLParser/badge.png)
 
 
 Useful Extension to combine Alamofire and SwiftyXMLParser
@@ -17,7 +16,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'Alamofire-XMLParser'
+pod 'Alamofire_XMLParser', :git => 'https://github.com/tin612/Alamofire_XMLParser.git'
 ```
 
 ### 2. install
