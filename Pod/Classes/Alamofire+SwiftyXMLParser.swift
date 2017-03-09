@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyXMLParser
 extension DataRequest {
-    static func xmlResponseSerializer(option: CharacterSet? = nil) -> DataResponseSerializer<XML.Accessor> {
+    public static func xmlResponseSerializer(option: CharacterSet? = nil) -> DataResponseSerializer<XML.Accessor> {
         return DataResponseSerializer { request, response, data, error in
             guard error == nil else {
                 return .failure(XMLError.parseError)
@@ -34,7 +34,7 @@ extension DataRequest {
     }
     
     @discardableResult
-    func responseXML(
+    public func responseXML(
         queue: DispatchQueue? = nil, option: CharacterSet? = nil,
         completionHandler: @escaping (DataResponse<XML.Accessor>) -> Void ) -> Self {
         return response(queue: queue, responseSerializer: DataRequest.xmlResponseSerializer(option: option), completionHandler: completionHandler)
