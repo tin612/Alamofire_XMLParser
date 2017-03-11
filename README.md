@@ -4,7 +4,7 @@
 
 Useful Extension to combine Alamofire and SwiftyXMLParser
 # Requirements
-* iOS 10.0+
+* iOS 9.0+
 * Swift 3.0+
 
 # Installation
@@ -69,7 +69,7 @@ Alamofire.request("http://laodong.com.vn/rss/home.rss").responseXML(completionHa
                 for element in root {
                     let title  = element["title"].text
                     let link = element["link"].text
-                    print(link)
+                    
                 }
             case .failure(let error):
                 print(error.localizedDescription)
@@ -78,7 +78,16 @@ Alamofire.request("http://laodong.com.vn/rss/home.rss").responseXML(completionHa
 
 ```
 
+
 Alamofire callbacks a parsed value with SwiftyXMLParser.
+
+#Version 1.2 Update
+#### Add new method to support parse imgURL from data in HTML tag
+## Usage
+```Swift
+    var keyElement: String = "description" // "content" 
+    let content = element[keyElement].text?.stringByDecodingHTMLEscapeCharacters().getImageURLsFromContent()
+```
 
 # LICENSE
 Copyright (c) 2017 Tin Phan
